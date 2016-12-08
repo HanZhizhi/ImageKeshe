@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_home"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.space.imageshe.HomeActivity"
+    android:background="@mipmap/homebg"
+    tools:showIn="@layout/activity_home">
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:layout_marginBottom="66dp"
+        android:scrollbars="none"
+        android:overScrollMode="never"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:text="美化图片"
+                android:layout_width="120dp"
+                android:layout_height="90dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:id="@+id/btMhtp" />
+
+            <Button
+                android:text="人像美容"
+                android:layout_width="120dp"
+                android:layout_height="90dp"
+                android:layout_toRightOf="@+id/btMhtp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:id="@+id/btRxmr" />
+
+            <Button
+                android:text="拼图"
+                android:layout_width="120dp"
+                android:layout_height="90dp"
+                android:layout_toRightOf="@+id/btRxmr"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:id="@+id/btPt" />
+
+            <Button
+                android:text="拍摄照片"
+                android:layout_width="120dp"
+                android:layout_height="90dp"
+                android:layout_below="@+id/btMhtp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/btPszp" />
+
+            <Button
+                android:text="其他"
+                android:layout_width="120dp"
+                android:layout_height="90dp"
+                android:id="@+id/btQt"
+                android:layout_alignBottom="@+id/btPszp"
+                android:layout_alignLeft="@+id/btPt"
+                android:layout_alignStart="@+id/btPt"
+                android:layout_marginLeft="0dp"
+                android:layout_marginStart="0dp" />
+
+            <Button
+                android:text="一键美图"
+                android:layout_width="120dp"
+                android:layout_height="90dp"
+                android:id="@+id/btYjmt"
+                android:layout_alignBottom="@+id/btPszp"
+                android:layout_alignLeft="@+id/btRxmr"
+                android:layout_alignStart="@+id/btRxmr"
+                android:layout_marginLeft="0dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"/>
+        </RelativeLayout>
+    </HorizontalScrollView>
+</RelativeLayout>

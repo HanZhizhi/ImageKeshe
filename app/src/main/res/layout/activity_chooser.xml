@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:gesture-image="http://schemas.polites.com/android"
+    android:id="@+id/activity_chooser"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.space.imageshe.ChooserActivity">
+
+    <Button
+        android:text="选择图片"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="19dp"
+        android:id="@+id/btChs" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <com.polites.android.GestureImageView
+            android:id="@+id/chsimg"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            gesture-image:max-scale="2.0"
+            gesture-image:min-scale="0.5"
+            gesture-image:strict="false" />
+
+
+    </RelativeLayout>
+
+
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:scrollbars="none"
+        android:overScrollMode="never">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btMsk"
+                android:text="马赛克"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="16dp"/>
+
+            <Button
+                android:id="@+id/btLd"
+                android:text="亮度"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="12dp"/>
+
+            <Button
+                android:id="@+id/btDbd"
+                android:text="对比度"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="12dp"/>
+
+            <Button
+                android:id="@+id/btQxd"
+                android:text="清晰度"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="12dp"/>
+
+            <Button
+                android:id="@+id/btWz"
+                android:text="文字"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="20dp"/>
+
+        </LinearLayout>
+
+
+    </HorizontalScrollView>
+</LinearLayout>
